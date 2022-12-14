@@ -1,0 +1,20 @@
+The approach i took on this microservice was to get the Data from the Rest endpoint and Make a request to the Team/User microservice 
+on the Team endpoint and then validate:
+
+1 - if the teamId exists 
+2 - if the userId is inside that Team
+3 - Verifing if those Roles exists on the microservice 
+4 - Allow to add the Roles for that User/team
+
+Other Controller just to manage the Roles
+Starting with the initial 3 and then possible to add more if needed.
+
+Suggestion is to add this logic in the Team part as one new HashMap with each Role and add the Roles as ENUMs 
+this would make more sense then this separate microservice just for roles and the Group/Team part separate.
+
+Added Swagger with Open Api 3 to test the scenarios
+
+Added some Tests for Edge-cases and validation
+
+
+DTO / Mappers was not necessary for this Use-case 
