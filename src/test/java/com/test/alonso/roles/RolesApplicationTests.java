@@ -1,10 +1,10 @@
-package com.test.alonso.securitytest;
+package com.test.alonso.roles;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SecuritytestApplicationTests {
+class RolesApplicationTests {
 
 	/*
 	 * @Test
